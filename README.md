@@ -36,13 +36,14 @@ You can also run `npx vercel` from this directory to connect a Vercel project an
 - `app/page.tsx`: project stories, technology list, workflow, biography, food captions, and contact details.
 - `app/globals.css`: design system, layout, responsive behavior, and reduced-motion support.
 - `app/layout.tsx`: page title, description, and social metadata.
+- `public/Jeman-Mama-CV.pdf`: downloadable CV linked from the hero. Replace this file with the same filename when updating the CV.
 - `public/images/`: optimized versions of supplied photos; food images are EXIF-transposed and exported to WebP without source metadata.
 - `public/logos/`: locally downloaded Devicon technology logos, plus their license.
 - `public/fonts/`: locally hosted DM Sans and DM Serif Display, with their SIL Open Font Licenses.
 
 The food gallery supports savory/sweet filters, shuffle, expansion, and a keyboard-accessible photo viewer. Project stories expand in place; workflow tabs support arrow keys, Home, and End. The contact address supports mail links and clipboard copy.
 
-All fintech client references use **Major Fintech Client**. Current lending operations work is marked as in development, and the approximate AI productivity improvement is explicitly identified as a team estimate. No confidential source documents or existing CV PDFs are included in the public files.
+All fintech client references use **Major Fintech Client**. Current lending operations work is marked as in development, and the approximate AI productivity improvement is explicitly identified as a team estimate. The downloadable CV follows the same generic project naming as the site. Confidential source documents are excluded from the public files.
 
 ## Asset credits
 

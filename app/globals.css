@@ -9,3 +9,7 @@
 @media(max-width:760px){.menu-toggle.icon-button{display:flex}}
 main{overflow-x:clip}
 @media(max-width:420px){.hand-arrow{right:-8px}}
+
+.hero-actions{flex-wrap:wrap;row-gap:16px}
+.secondary{border:1px solid #a7afa0;background:transparent}
+.secondary:hover{background:#e1e5d3}
