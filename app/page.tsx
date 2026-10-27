@@ -6,14 +6,87 @@ import { ArrowUpRight, ArrowDown, ArrowRight, Plus, Minus, Menu, X, Code2, Spark
 
 const tech = [ ['java','Java'], ['spring','Spring Boot'], ['react','React'], ['vue','Vue 3'], ['postgresql','PostgreSQL'], ['docker','Docker'], ['kubernetes','Kubernetes'], ['aws','AWS'], ['redis','Redis'], ['kafka','Kafka'], ['gitlab','GitLab CI/CD'], ['grafana','Grafana'] ];
 const food = [
-  { id: 1, name: 'A very good lunch decision', note: 'Rice, something crispy, and zero regrets.', type: 'Savory', alt: 'Glazed meat and rice served at a restaurant' },
-  { id: 2, name: 'Comfort, by the bowl', note: 'Some days just call for a big bowl of ramen.', type: 'Savory', alt: 'Ramen with pork, egg, noodles, and a rich broth' },
-  { id: 3, name: 'The sizzling kind of happy', note: 'The sound of a good meal arriving.', type: 'Savory', alt: 'Meat served on a sizzling plate' },
-  { id: 4, name: 'There’s always room', note: 'The dessert stomach is a separate system.', type: 'Sweet', alt: 'A dessert topped with cream and sauce' },
-  { id: 5, name: 'A little bit of everything', note: 'A table full of possibilities.', type: 'Savory', alt: 'A Japanese meal with side dishes and sauces' },
-  { id: 6, name: 'Worth the extra order', note: 'For the “let’s get one more thing” moments.', type: 'Savory', alt: 'Crispy glazed bites on a white plate' },
-  { id: 7, name: 'The full plate approach', note: 'Good food. Good company. A very full plate.', type: 'Savory', alt: 'Grilled meat, rice, fries, and sides on a tray' },
-  { id: 8, name: 'Ribs & a little happiness', note: 'The kind of plan I’m happy to commit to.', type: 'Savory', alt: 'Glazed ribs served with a dipping sauce' },
+  {
+    "id": 9,
+    "restaurant": "Ginza Gyu",
+    "name": "Wagyu Skirt Claypot",
+    "note": "A little wagyu, a little happiness.",
+    "type": "Savory",
+    "alt": "Wagyu Skirt Claypot at Ginza Gyu",
+    "image": "/images/food/ginza-gyu-wagyu-skirt-claypot.webp"
+  },
+  {
+    "id": 2,
+    "restaurant": "Mendokoro Ramenba",
+    "name": "Miso Tonkotsu Ramen",
+    "note": "Some days just call for a big bowl of ramen.",
+    "type": "Savory",
+    "alt": "Miso Tonkotsu Ramen at Mendokoro Ramenba",
+    "image": "/images/food/mendokoro-ramenba-miso-tonkotsu-ramen.webp"
+  },
+  {
+    "id": 3,
+    "restaurant": "Everything Yummy",
+    "name": "Adobomb",
+    "note": "The sizzling kind of happy.",
+    "type": "Savory",
+    "alt": "Adobomb at Everything Yummy",
+    "image": "/images/food/everything-yummy-adobomb.webp"
+  },
+  {
+    "id": 4,
+    "restaurant": "Mesa",
+    "name": "Palitaw",
+    "note": "The dessert stomach is a separate system.",
+    "type": "Sweet",
+    "alt": "Palitaw at Mesa",
+    "image": "/images/food/mesa-palitaw.webp"
+  },
+  {
+    "id": 1,
+    "restaurant": "Tiong Bahru Singapore Flavours",
+    "name": "Roasted Chicken Rice",
+    "note": "A very good lunch decision.",
+    "type": "Savory",
+    "alt": "Roasted Chicken Rice at Tiong Bahru Singapore Flavours",
+    "image": "/images/food/tiong-bahru-singapore-flavours-roasted-chicken-rice.webp"
+  },
+  {
+    "id": 5,
+    "restaurant": "Ding How",
+    "name": "Pork Chop Rice, Steamed Cabbage Rolls, Steamed Pork Ribs",
+    "note": "A table full of possibilities.",
+    "type": "Savory",
+    "alt": "Pork Chop Rice, Steamed Cabbage Rolls, Steamed Pork Ribs at Ding How",
+    "image": "/images/food/ding-how-pork-chop-rice-steamed-cabbage-rolls-steamed-pork-ribs.webp"
+  },
+  {
+    "id": 6,
+    "restaurant": "Tiong Bahru Singapore Flavours",
+    "name": "Fried Tofu in Special Sauce",
+    "note": "For the “let’s get one more thing” moments.",
+    "type": "Savory",
+    "alt": "Fried Tofu in Special Sauce at Tiong Bahru Singapore Flavours",
+    "image": "/images/food/tiong-bahru-singapore-flavours-fried-tofu-in-special-sauce.webp"
+  },
+  {
+    "id": 7,
+    "restaurant": "Pardo",
+    "name": "Angus Rib Set",
+    "note": "Good food. Good company. A very full plate.",
+    "type": "Savory",
+    "alt": "Angus Rib Set at Pardo",
+    "image": "/images/food/pardo-angus-rib-set.webp"
+  },
+  {
+    "id": 8,
+    "restaurant": "Everything Yummy",
+    "name": "The Rib King",
+    "note": "The kind of plan I’m happy to commit to.",
+    "type": "Savory",
+    "alt": "The Rib King at Everything Yummy",
+    "image": "/images/food/everything-yummy-the-rib-king.webp"
+  }
 ];
 const projects = [
   { number: '01', title: 'Making lending work, end to end.', subtitle: 'Lending Operations Platform', category: 'MAJOR FINTECH CLIENT · MAR 2026–PRESENT', description: 'Leading six developers while staying in the code: translating solution architecture into implementation, unblocking delivery, and preparing for production.', tags: ['Java', 'Spring Boot', 'Flowable', 'gRPC'], status: 'In development', color: 'sage', details: [ ['The challenge', 'Daily batch processing needed persistent execution state, retry handling, and clear failure visibility across system boundaries.'], ['My contribution', 'Implemented Flowable-based batch execution around a backend processing service using gRPC. The workflow persists aggregate status, retries configured errors, and supports manual retriggering. The processing service owns downstream execution and any internal checkpointing.'], ['Beyond the code', 'I lead development-side reviews, deployment runbooks, prerequisites, and cross-team coordination under the primary solution architect. The system has not yet received production traffic.'] ] },
@@ -90,10 +163,10 @@ export default function Home() {
       <section className="toolkit section-wrap" aria-labelledby="toolkit-title"><div className="toolkit-heading"><div className="eyebrow">THE TOOLKIT</div><h2 id="toolkit-title">Good tools. <em>Thoughtful choices.</em></h2><p>A few technologies I’ve worked with. The problem always comes first.</p></div><div className="tech-grid">{tech.map(([id,name]) => <div className="tech" key={id}><Image src={`/logos/${id}.svg`} width={30} height={30} alt=""/><span>{name}</span></div>)}</div></section>
       <section id="approach" className="approach"><div className="section-wrap"><div className="approach-top"><div><div className="eyebrow">02 / HOW I THINK & BUILD</div><h2>Keep it simple.<br/>Make it <em>matter.</em></h2></div><div className="approach-principles"><p>“What does the business need?<br/>And what’s the budget?”</p><span>That’s usually where I start. Clear boundaries, practical decisions, and just enough architecture for the problem in front of us.</span></div></div><div className="approach-divider"/><div className="ai-layout"><div><div className="ai-label"><Sparkles size={16}/> AI-ASSISTED. HUMAN-OWNED.</div><h3>A better workflow.<br/>The same accountability.</h3><p>I brought a structured AI-assisted development workflow to my six-developer team. AI helps across the lifecycle. People own the decisions, reviews, and quality.</p><div className="ai-metric"><strong>~3×</strong><span>Observed feature implementation speed<br/><small>Team estimate, not a controlled measurement.</small></span></div></div><div className="workflow"><div className="workflow-tabs" role="tablist" aria-label="AI-assisted workflow">{workflow.map(([label],i) => <button key={label} id={`step-${i}`} role="tab" aria-selected={step===i} aria-controls="workflow-panel" tabIndex={step===i?0:-1} onClick={() => setStep(i)} onKeyDown={e => { if (e.key==='ArrowRight'||e.key==='ArrowLeft'||e.key==='Home'||e.key==='End') { e.preventDefault(); const next=e.key==='Home'?0:e.key==='End'?4:(i+(e.key==='ArrowRight'?1:4))%5;setStep(next); document.getElementById(`step-${next}`)?.focus(); } }}><span>0{i+1}</span>{label}</button>)}</div><div className="workflow-panel" role="tabpanel" id="workflow-panel" aria-labelledby={`step-${step}`}><span className="workflow-number">0{step+1}</span><h4>{workflow[step][0]} with intention.</h4><p>{workflow[step][1]}</p><div className="workflow-note"><Check size={14}/> Human judgment at every step</div></div></div></div></div></section>
       <section id="about" className="about section-wrap"><div className="about-photo-wrap"><div className="about-photo"><Image src="/images/jeman-candid.webp" alt="A candid side view of Jeman at a laptop, wearing a blue bucket hat" fill sizes="(max-width: 700px) 90vw, 500px"/></div><div className="photo-tape"/><div className="about-caption">Same curiosity. Different tabs open. <span>↗</span></div><div className="little-note">a work in progress,<br/>in the best way.</div></div><div className="about-copy"><div className="eyebrow">03 / BEYOND THE CODE</div><h2>More than<br/><em>my browser tabs.</em></h2><p>I like understanding how things work. That curiosity follows me everywhere: into science fiction, layered music, unfamiliar places, and the little ideas I can’t help bringing to life.</p><p>I experiment with music, photography, and short films. I swim, skate, travel, and try to keep showing up for my fitness goals. Sometimes I make things just because making them is fun.</p><aside className="art-note" aria-labelledby="art-note-title"><div className="art-note-icon"><Palette size={21}/></div><div><h3 id="art-note-title">An artist, too.</h3><p>Digital art was a bigger part of my high school and college days. I create less often now, but that creative side is still part of me.</p><a className="text-link" href="https://www.instagram.com/orange_overlay/" target="_blank" rel="noopener noreferrer">Visit @orange_overlay <ArrowUpRight size={14}/></a></div></aside><blockquote>“I can do anything.”<span>Not because I know everything. Because I can learn.</span></blockquote><div className="interest-tags"><span><Music2 size={14}/> Making music</span><span><Camera size={14}/> Photography</span><span><BookOpen size={14}/> Science fiction</span><span><Waves size={14}/> Swimming & skating</span><span><Coffee size={14}/> Coffee & good company</span></div></div></section>
-      <section id="food" className="food-section"><div className="section-wrap"><div className="food-heading"><div><div className="eyebrow">04 / THE VERY IMPORTANT FOOD SECTION</div><h2>Good code.<br/><em>Even better lunch plans.</em></h2></div><div className="food-intro"><span className="food-doodle">✳</span><p>A considerable portion of my extra money becomes dinner. No regrets. Here’s a little photo journal of the things I’ve happily eaten.</p><span>My camera eats first. Usually.</span></div></div><div className="food-toolbar"><div className="food-filters" aria-label="Filter food photos">{['All cravings','Savory','Sweet'].map(f => <button key={f} className={filter===f?'active':''} onClick={() => {setFilter(f);setShowAll(false);}} aria-pressed={filter===f}>{f}{f==='All cravings' && <span>08</span>}</button>)}</div><button className="shuffle-button" onClick={shuffleFood}><Shuffle size={14}/><span>Surprise me</span></button></div><div className="food-grid">{visibleFood.map((f) => <button className="food-card" key={f.id} onClick={() => setSelected(f.id)} aria-label={`View photo: ${f.name}`}><div className="food-photo"><Image src={`/images/food/${f.id}.webp`} alt={f.alt} fill sizes="(max-width: 600px) 85vw, (max-width: 900px) 45vw, 25vw"/><span className="food-zoom"><Plus size={20}/></span><span className="food-index">{String(f.id).padStart(2,'0')} / FOOD DIARY</span></div><div className="food-card-caption"><span>{f.name}</span><ArrowUpRight size={16}/></div></button>)}</div><div className="food-bottom"><p><Heart size={14}/> A personal collection. Best viewed when you’re not hungry.</p>{filtered.length>4 && <button className="text-link" onClick={() => setShowAll(!showAll)}>{showAll?'A little less temptation':'More from the camera roll'}{showAll?<Minus size={16}/>:<Plus size={16}/>}</button>}</div></div></section>
+      <section id="food" className="food-section"><div className="section-wrap"><div className="food-heading"><div><div className="eyebrow">04 / THE VERY IMPORTANT FOOD SECTION</div><h2>Good code.<br/><em>Even better lunch plans.</em></h2></div><div className="food-intro"><span className="food-doodle">✳</span><p>A considerable portion of my extra money becomes dinner. No regrets. Here’s a little photo journal of the things I’ve happily eaten.</p><span>My camera eats first. Usually.</span></div></div><div className="food-toolbar"><div className="food-filters" aria-label="Filter food photos">{['All cravings','Savory','Sweet'].map(f => <button key={f} className={filter===f?'active':''} onClick={() => {setFilter(f);setShowAll(false);}} aria-pressed={filter===f}>{f}{f==='All cravings' && <span>{String(food.length).padStart(2, '0')}</span>}</button>)}</div><button className="shuffle-button" onClick={shuffleFood}><Shuffle size={14}/><span>Surprise me</span></button></div><div className="food-grid">{visibleFood.map((f) => <button className="food-card" key={f.id} onClick={() => setSelected(f.id)} aria-label={`View photo: ${f.name} at ${f.restaurant}`}><div className="food-photo"><Image src={f.image} alt={f.alt} fill sizes="(max-width: 600px) 85vw, (max-width: 900px) 45vw, 25vw"/><span className="food-zoom"><Plus size={20}/></span><span className="food-index">{String(f.id).padStart(2,'0')} / FOOD DIARY</span></div><div className="food-card-caption"><span><small className="food-restaurant">{f.restaurant}</small>{f.name}</span><ArrowUpRight size={16}/></div></button>)}</div><div className="food-bottom"><p><Heart size={14}/> A personal collection. Best viewed when you’re not hungry.</p>{filtered.length>4 && <button className="text-link" onClick={() => setShowAll(!showAll)}>{showAll?'A little less temptation':'More from the camera roll'}{showAll?<Minus size={16}/>:<Plus size={16}/>}</button>}</div></div></section>
       <section id="contact" className="contact section-wrap"><div className="eyebrow">05 / LET’S CONNECT</div><div className="contact-layout"><div><h2>Something on your mind?<br/><em>Let’s talk about it.</em></h2><p>A software challenge, an interesting idea, or a restaurant I absolutely need to try. My inbox has room.</p></div><a href="mailto:jemanmama@gmail.com" className="contact-orb" aria-label="Email Jeman"><ArrowUpRight size={44} strokeWidth={1}/><span>Say hello</span></a></div><div className="contact-bottom"><a className="email-link" href="mailto:jemanmama@gmail.com">jemanmama@gmail.com <ArrowUpRight size={20}/></a><button className="copy-button" aria-label={copied ? "Email copied" : "Copy email address"} onClick={copyEmail}>{copied?<Check size={14}/>:<Copy size={14}/>}<span role="status">{copied?'Copied!':'Copy email'}</span></button><span className="contact-note">Good conversations start somewhere.</span></div><div className="contact-channels"><div className="phone-contact"><span className="eyebrow">CALL OR TEXT</span><a href="tel:+639614184490"><Phone size={17}/> +63 961 418 4490 <ArrowUpRight size={16}/></a></div><div className="social-contact"><span className="eyebrow">AROUND THE INTERNET</span><nav className="social-links" aria-label="Social profiles"><a href="https://www.facebook.com/jeman.daw/" target="_blank" rel="noopener noreferrer"><Facebook size={16}/> Facebook <ArrowUpRight size={13}/></a><a href="https://www.linkedin.com/in/jemanmama/" target="_blank" rel="noopener noreferrer"><Linkedin size={16}/> LinkedIn <ArrowUpRight size={13}/></a><a href="https://www.instagram.com/orange_overlay/" target="_blank" rel="noopener noreferrer"><Instagram size={16}/><span>Instagram <small>Digital art</small></span><ArrowUpRight size={13}/></a></nav></div></div></section>
     </main>
     <footer className="section-wrap"><a href="#" className="wordmark">jeman<span>✳</span><i/></a><span>© {new Date().getFullYear()} Jeman Mama <span className="footer-dot">·</span> Made with curiosity & a full stomach.</span><a className="back-top" href="#">Back to top <ArrowUpRight size={14}/></a></footer>
-    {selectedFood && <div className="lightbox" role="dialog" aria-modal="true" aria-labelledby="photo-title" onClick={e => {if(e.target===e.currentTarget) setSelected(null);}}><button ref={closeRef} className="lightbox-close icon-button" aria-label="Close photo" onClick={() => setSelected(null)}><X/></button><button className="lightbox-prev icon-button" aria-label="Previous photo" onClick={() => movePhoto(-1)}><ChevronLeft/></button><div className="lightbox-content"><div className="lightbox-image"><Image src={`/images/food/${selectedFood.id}.webp`} alt={selectedFood.alt} fill sizes="(max-width:700px) 90vw, 800px" style={{objectFit:'contain'}}/></div><h3 id="photo-title">{selectedFood.name}</h3><p>{selectedFood.note}</p><small>{filtered.findIndex(f=>f.id===selectedFood.id)+1} / {filtered.length} · Use arrow keys to explore</small></div><button className="lightbox-next icon-button" aria-label="Next photo" onClick={() => movePhoto(1)}><ChevronRight/></button></div>}
+    {selectedFood && <div className="lightbox" role="dialog" aria-modal="true" aria-labelledby="photo-title" onClick={e => {if(e.target===e.currentTarget) setSelected(null);}}><button ref={closeRef} className="lightbox-close icon-button" aria-label="Close photo" onClick={() => setSelected(null)}><X/></button><button className="lightbox-prev icon-button" aria-label="Previous photo" onClick={() => movePhoto(-1)}><ChevronLeft/></button><div className="lightbox-content"><div className="lightbox-image"><Image src={selectedFood.image} alt={selectedFood.alt} fill sizes="(max-width:700px) 90vw, 800px" style={{objectFit:'contain'}}/></div><div className="lightbox-restaurant">{selectedFood.restaurant}</div><h3 id="photo-title">{selectedFood.name}</h3><p>{selectedFood.note}</p><small>{filtered.findIndex(f=>f.id===selectedFood.id)+1} / {filtered.length} · Use arrow keys to explore</small></div><button className="lightbox-next icon-button" aria-label="Next photo" onClick={() => movePhoto(1)}><ChevronRight/></button></div>}
   </>;
 }

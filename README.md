@@ -51,4 +51,4 @@ Technology logos: [Devicon](https://github.com/devicons/devicon), MIT license. T
 
 Fonts: [DM Sans](https://fonts.google.com/specimen/DM+Sans) and [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display), SIL Open Font License 1.1.
 
-Photography: supplied by Jeman Mama. Food captions are playful editorial copy; restaurant locations and ratings have not been inferred.
+Photography: supplied by Jeman Mama. Restaurant and dish names come from the supplied photo filenames. Additional captions are playful editorial copy; locations and ratings have not been inferred.
