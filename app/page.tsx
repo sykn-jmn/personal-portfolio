@@ -29,7 +29,7 @@ const food = [
     "id": 3,
     "restaurant": "Everything Yummy",
     "name": "Adobomb",
-    "note": "The sizzling kind of happy.",
+    "note": "A very good reason to order extra rice.",
     "type": "Savory",
     "alt": "Adobomb at Everything Yummy",
     "image": "/images/food/everything-yummy-adobomb.webp"
