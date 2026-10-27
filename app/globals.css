@@ -35,3 +35,12 @@ main{overflow-x:clip}
 .lightbox-restaurant{font-size:11px;color:#c9d6b3;margin-top:17px}
 .lightbox h3{margin-top:6px}
 @media(max-width:760px){.food-card-caption{min-height:105px}.food-restaurant{font-size:8px}}
+
+.food-card-favorite{background:#fbf3d9;border-color:#c1a562;box-shadow:0 3px 13px #94752818}
+.food-card-favorite:hover{box-shadow:0 8px 24px #94752828}
+.favorite-badge{position:absolute;top:12px;left:10px;display:flex;align-items:center;gap:6px;padding:7px 9px;border:1px solid #dcc78b;border-radius:3px;background:#fff4d5f5;color:#74531d;font:600 7px/1.4 var(--sans);letter-spacing:.8px;box-shadow:0 2px 7px #20180515}
+.favorite-caption{display:block;font:italic 13px/1.5 var(--serif);color:#876126;margin-top:9px}
+.food-card-favorite .food-restaurant{color:#876c3a}
+.lightbox-favorite{display:inline-flex;align-items:center;gap:8px;font:500 9px/1.5 var(--sans);letter-spacing:1.3px;color:#eed59c;margin-top:18px}
+.lightbox-favorite+.lightbox-restaurant{margin-top:7px}
+@media(max-width:420px){.favorite-badge{font-size:6px;padding:6px;gap:4px;left:7px;top:8px;letter-spacing:.4px}.favorite-badge svg{width:9px;height:9px}.favorite-caption{font-size:12px}}
