@@ -324,6 +324,16 @@ section[id] {
   text-wrap: pretty;
 }
 
+.experience-years {
+  max-width: 440px;
+  margin: 18px 0 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1964,6 +1974,7 @@ footer > span {
 .hero-animate .hero-brand,
 .hero-animate .hero-title,
 .hero-animate .hero-intro,
+.hero-animate .experience-years,
 .hero-animate .hero-actions,
 .hero-animate .hero-meta {
   animation: hero-rise var(--duration-enter) var(--ease-out) both;
@@ -1979,6 +1990,10 @@ footer > span {
 
 .hero-animate .hero-intro {
   animation-delay: 180ms;
+}
+
+.hero-animate .experience-years {
+  animation-delay: 210ms;
 }
 
 .hero-animate .hero-actions {

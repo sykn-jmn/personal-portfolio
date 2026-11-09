@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import ExperienceYears from './experience-years';
 import {
   ArrowUpRight,
   ArrowDown,
@@ -517,6 +518,7 @@ export default function Home() {
               At Orange & Bronze, I lead six developers on lending and credit systems. I stay close
               to the architecture, the tickets, and the questions that save us rework later.
             </p>
+            <ExperienceYears />
             <div className="hero-actions">
               <a className="button primary" href="#work">
                 See selected work <ArrowUpRight size={17} />
